@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<section class="poll-section">
+    <h2>Опитування: Твої фаворити</h2>
+    
+    <form action="#" method="POST">
+        
+        <!-- Блок 1: Вибір однієї команди (Радіокнопки) -->
+        <fieldset>
+            <legend>Обери свою улюблену команду (лише одна):</legend>
+            
+            <!-- Атрибут name="team" однаковий для всіх, тому вибрати можна лише один варіант -->
+            <label>
+                <input type="radio" name="team" value="ferrari" required> Ferrari
+            </label><br>
+            
+            <label>
+                <input type="radio" name="team" value="mclaren"> McLaren
+            </label><br>
+            
+            <label>
+                <input type="radio" name="team" value="red_bull"> Red Bull Racing
+            </label><br>
+            
+            <label>
+                <input type="radio" name="team" value="mercedes"> Mercedes
+            </label>
+        </fieldset>
+        
+        <br>
+
+        <!-- Блок 2: Вибір пілотів (Чекбокси) -->
+        <fieldset>
+            <legend>Обери улюблених пілотів (максимум 3):</legend>
+            
+            <!-- Атрибут name="drivers" однаковий, але оскільки це checkbox, можна вибрати кілька -->
+            <label>
+                <input type="checkbox" name="drivers" value="leclerc"> Шарль Леклер
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="drivers" value="verstappen"> Макс Ферстаппен
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="drivers" value="norris"> Ландо Норріс
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="drivers" value="hamilton"> Льюїс Гамілтон
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="drivers" value="piastri"> Оскар Піастрі
+            </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Відправити голос</button>
+        
+    </form>
+</section>
